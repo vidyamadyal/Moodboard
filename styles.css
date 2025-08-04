@@ -1,0 +1,60 @@
+/*  Base Theme Variables */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #222222;
+  --accent-color: #0099ff;
+}
+
+/*  Global Styles */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Segoe UI', sans-serif;
+  transition: background 0.6s ease, color 0.6s ease;
+  margin: 0;
+  padding: 2rem;
+}
+
+.container {
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--accent-color);
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Mood Themes */
+body.calm {
+  --bg-color: #e0f7fa;
+  --text-color: #006064;
+  --accent-color: #4dd0e1;
+}
+
+body.energetic {
+  --bg-color: #fff3e0;
+  --text-color: #e65100;
+  --accent-color: #ff9800;
+}
+
+body.focus {
+  --bg-color: #f3f4f6;
+  --text-color: #1f2937;
+  --accent-color: #3b82f6;
+}
+
+body.dreamy {
+  --bg-color: #ede7f6;
+  --text-color: #4a148c;
+  --accent-color: #ba68c8;
+}
